@@ -2,7 +2,7 @@ package before
 
 import "testing"
 
-func TestAdd(t *testing.T) {
+func TestAddNums(t *testing.T) {
 	t.Run("returns correct integer", func(t *testing.T) {
 		got := AddNums(2, 2)
 		exp := 4
@@ -11,8 +11,8 @@ func TestAdd(t *testing.T) {
 		}
 	})
 	t.Run("returns correct integer", func(t *testing.T) {
-		got := AddNums(2, 10)
-		exp := 12
+		got := AddNums(-10, -10)
+		exp := -20
 		if got != exp {
 			t.Errorf("got %d, expected %d", got, exp)
 		}

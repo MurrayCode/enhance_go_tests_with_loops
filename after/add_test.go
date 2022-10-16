@@ -2,7 +2,7 @@ package after
 
 import "testing"
 
-func TestAdd(t *testing.T) {
+func TestAddNums(t *testing.T) {
 	var tests = []struct {
 		inputs []int
 		ans    int
@@ -12,8 +12,8 @@ func TestAdd(t *testing.T) {
 			4,
 		},
 		{
-			[]int{2, 10},
-			12,
+			[]int{-10, -10},
+			-20,
 		},
 		{
 			[]int{-1, 3},
